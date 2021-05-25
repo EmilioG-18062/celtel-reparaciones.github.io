@@ -5,6 +5,16 @@
     <title>result</title>
   </head>
   <body>
+    <div class="result" id="result">
+      <a href="/">Regresar</a>
+      <script>
+        const resultList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+          resultList.append(`${name}: ${value}`)
+          resultList.append(document.createElement('br'))
+        })
+      </script>
+    </div>
 
   </body>
 </html>
