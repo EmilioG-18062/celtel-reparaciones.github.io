@@ -3,17 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>result</title>
-  </head>
-  <body>
-    <div id="results"></div>
-    <a href="https://emiliog-18062.github.io/celtel-reparaciones.github.io/?">Regresar</a>
-    <script>
-      const resultsList = document.getElementById('results')
-      new URLSearchParams(window.location.search).forEach((value,name) => {
-        resultsList.append(`${name}: ${value}`)
-        resultsList.append(document.createElement('br'))
-      })
 
+    <script type="text/javascript">
       var fecha = new Date();
       var dia = fecha.getDate();
       var mes = fecha.getMonth() + 1;
@@ -22,6 +13,20 @@
       var objetivo = document.getElementById('texto_nav1');
       objetivo.innerHTML = fechacompleta;
     </script>
-    <label id="texto_nav1">Aqui</label>
+  </head>
+
+  <body>
+    <div id="results"></div>
+    <a href="https://emiliog-18062.github.io/celtel-reparaciones.github.io/?">Regresar</a>
+
+    <script>
+      const resultsList = document.getElementById('results')
+      new URLSearchParams(window.location.search).forEach((value,name) => {
+        resultsList.append(`${name}: ${value}`)
+        resultsList.append(document.createElement('br'))
+      })
+    </script>
+
+    <label id="texto_nav1"></label>
   </body>
 </html>
