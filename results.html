@@ -5,10 +5,10 @@
     <title>result</title>
   </head>
   <body>
-    <div class="result" id="results"></div>
+    <div id="results"></div>
     <a href="https://emiliog-18062.github.io/celtel-reparaciones.github.io/?">Regresar</a>
     <script>
-      const resultList = document.getElementById('results')
+      const resultsList = document.getElementById('results')
       new URLSearchParams(window.location.search).forEach((value,name) => {resultsList.append(`${name}: ${value}`) resultsList.append(document.createElement('br'))})
     </script>
   </body>
