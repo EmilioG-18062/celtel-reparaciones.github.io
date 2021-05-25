@@ -14,7 +14,14 @@
         resultsList.append(document.createElement('br'))
       })
 
-      s.writeline("-----------------------------");
+      var fecha = new Date();
+      var dia = fecha.getDate();
+      var mes = fecha.getMonth() + 1;
+      var ano = fecha.getFullYear();
+      var fechacompleta = dia+"/"+mes+"/"+ano;
+      var objetivo = document.getElementById('texto_nav1');
+      objetivo.innerHTML = fechacompleta;
     </script>
+    <label id="texto_nav1"></label>
   </body>
 </html>
